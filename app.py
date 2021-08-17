@@ -116,7 +116,7 @@ def get_item_predictions(instrid):
     except KeyError:
         return jsonify({"error": "Prediction scores not generated for new item. Please retrain model!"})
     print(items_keep)
-    predicted_items = items_keep.sort_values(by='0', ascending=False)[:top_n].index.tolist()
+    predicted_items = items_keep.sort_values(ascending=False)[:top_n].index.tolist()
     return jsonify({"predicted_items": predicted_items})
 
 
