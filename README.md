@@ -194,7 +194,7 @@ Tech used: Flask
    - Versioning (Source code & Data), eg. DVC
    - Data Quality checks, eg. Great Expectations
    - Logging & Monitoring, eg. CloudWatch (AWS), Graphana, Prometheus, ELK
-   - Deployment Pipelines & Infra: IaC (eg. Terraform), CI/CD (eg. GitHub workflows)
+   - Deployment, pipelines & Infra: IaC (eg. Terraform), CI/CD (eg. GitHub workflows), Containers (eg. Docker)
    
 4. How would you evaluate and improve the Similarity model?
    - Coverage: percent of items in the training data, the model is able to recommend on a test set).
@@ -203,5 +203,3 @@ Tech used: Flask
    - For improving: 
      - Remove popular items from the training data, Reduce noise
      - Scale item ratings by the user’s value, such as average transaction value. This can help a model learn to recommend items that lead to loyal or high-value customers.
-
-   
