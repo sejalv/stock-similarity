@@ -5,6 +5,7 @@ Simple collaborative recommendation for product similarity estimation.
 ### Setup
 
 **Prerequisites**
+
 Built with Python 3.9, but should work with other > Python 3.6 versions.
 ```
 pip install virtualenv
