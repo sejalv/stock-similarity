@@ -137,12 +137,13 @@ Output:
   }
 }
 ```
+
 4. Item-based similarity
 ```
 curl http://<ip>:5000/instruments/similar/4
 ```
 Output:
-````
+```
 {
   "predicted_items": [
     "0",
@@ -153,6 +154,8 @@ Output:
   ]
 }
 ```
+
+
 5. User-based similarity
 ```
 curl http://<ip>:5000/instruments/similar/ABC
@@ -197,7 +200,7 @@ Tech used: Flask
    - Deployment, pipelines & Infra: IaC (eg. Terraform), CI/CD (eg. GitHub workflows), Containers (eg. Docker)
    
 4. How would you evaluate and improve the Similarity model?
-   - Coverage: percent of items in the training data, the model is able to recommend on a test set).
+   - Coverage: percent of items in the training data, the model is able to recommend on a test set.
    - Personalization: to assess if a model recommends many of the same items to different users. It is the dissimilarity (1- cosine similarity) between user’s lists of recommendations. A high personalization score would indicate the user’s recommendations are different, meaning the model is offering a personalized experience to each user.
    - Intra-list similarity: average cosine similarity of all items in a list of recommendations. This calculation uses features of the recommended items to calculate the similarity. 
    - For improving: 
